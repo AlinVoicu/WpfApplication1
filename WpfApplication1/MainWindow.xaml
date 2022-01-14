@@ -1,0 +1,35 @@
+﻿<Window x:Class="WpfApplication1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <DataGrid x:Name="StudentGrid" HorizontalAlignment="Left" Margin="10,16,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.292,0.183" SelectionChanged="dataGrid_SelectionChanged" Height="189" Width="265">
+            <DataGrid.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.331"/>
+                    <TranslateTransform X="0.023" Y="-0.013"/>
+                </TransformGroup>
+            </DataGrid.RenderTransform>
+        </DataGrid>
+        <Button x:Name="button" Content="Editeaza student" HorizontalAlignment="Left" Margin="26,251,0,0" VerticalAlignment="Top" Width="98" RenderTransformOrigin="0.215,-1.459" Click="button_Click"/>
+        <Button x:Name="button1" Content="Sterge student" HorizontalAlignment="Left" Margin="159,251,0,0" VerticalAlignment="Top" Width="115" Click="button1_Click"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="247" Margin="332,24,0,0" VerticalAlignment="Top" Width="161">
+            <Grid Margin="1,-1,-1,1">
+                <Button x:Name="button2" Content="Adauga student" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="10,206,0,0" Click="button2_Click"/>
+                <Label x:Name="label" Content="Nume student" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="101"/>
+                <Label x:Name="label1" Content="Prenume student" HorizontalAlignment="Left" Margin="10,60,0,0" VerticalAlignment="Top" Width="101"/>
+                <Label x:Name="label2" Content="Medie student" HorizontalAlignment="Left" Margin="10,120,0,0" VerticalAlignment="Top" Width="101"/>
+                <TextBox x:Name="NumetTxt" HorizontalAlignment="Left" Height="23" Margin="10,37,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-0.062,-0.1"/>
+                <TextBox x:Name="PrenumeTxt" HorizontalAlignment="Left" Height="23" Margin="10,91,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.022,-0.1" TextChanged="textBox1_TextChanged"/>
+                <TextBox x:Name="MedieTxt" HorizontalAlignment="Left" Height="23" Margin="10,151,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.116,0.075"/>
+            </Grid>
+        </Border>
+
+    </Grid>
+</Window>
